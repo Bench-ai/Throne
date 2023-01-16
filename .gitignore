@@ -1,0 +1,7 @@
+ModelDirectory/ModelDefinitions/Layers
+venv
+ModelDirectory
+__pycache__/
+Layers
+.idea/
+.DS_Store
