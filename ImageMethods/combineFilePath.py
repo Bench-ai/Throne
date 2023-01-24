@@ -1,14 +1,7 @@
 import os
+import numpy as np
 
 def combine_method(curr, add, before):
-    if before:
-        combined = os.path.join(add, curr)
-    else:
-        combined = os.path.join(curr, add)
+    combined = os.path.join(add, curr) if before else os.path.join(curr, add)
 
-    if os.path.exists(combined):
-        return combined
-    else:
-        return "Path is invalid"
-    return combined
-
+    return combined if os.path.exists(combined) else np.NaN
